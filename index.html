@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Interactive Lab</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>JS Interactive Lab</h1>
+            <p>
+                DecodeLabs Project 3 — Interactive Web Elements
+            </p>
+
+            <button class="js-theme-toggle theme-toggle-btn">
+                🌙 Switch to Dark
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Counter Section -->
+        <section class="section-card">
+            <h2>Dynamic Counter</h2>
+            <p>
+                Demonstrates state updates and DOM manipulation.
+            </p>
+
+            <div class="counter-wrapper">
+                <button class="js-decrement-btn">
+                    -
+                </button>
+
+                <div class="js-counter-display counter-display">
+                    0
+                </div>
+
+                <button class="js-increment-btn">
+                    +
+                </button>
+            </div>
+
+            <button class="js-reset-btn">
+                Reset
+            </button>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-card">
+            <h2>JavaScript FAQ</h2>
+            <p>
+                Click a question to reveal the answer.
+            </p>
+
+            <div class="faq-item">
+                <button class="js-faq-btn faq-question">
+                    What is JavaScript?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    JavaScript adds behaviour and interactivity to web pages.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="js-faq-btn faq-question">
+                    What is the DOM?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    The DOM is the browser's object representation of HTML.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="js-faq-btn faq-question">
+                    What is an event?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    An event is something that happens in the browser such as a click.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="js-faq-btn faq-question">
+                    Why use addEventListener?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    It separates JavaScript behaviour from HTML structure.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="js-faq-btn faq-question">
+                    What is localStorage?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    localStorage allows data to persist after page refreshes.
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Counter -->
+        <section class="section-card">
+            <h2>Live Character Counter</h2>
+
+            <textarea
+                class="js-message-input"
+                maxlength="150"
+                placeholder="Write your message..."
+            ></textarea>
+
+            <p class="js-char-count">
+                0 / 150 characters
+            </p>
+
+            <p class="js-warning-message"></p>
+        </section>
+
+        <!-- Palette Generator -->
+        <section class="section-card">
+            <h2>Colour Palette Generator</h2>
+
+            <button class="js-generate-btn">
+                Generate Palette
+            </button>
+
+            <div class="js-palette-container">
+            </div>
+
+            <p class="js-copy-message">
+            </p>
+        </section>
+
+        <!-- Show Hide Cards -->
+        <section class="section-card">
+            <h2>Show / Hide Sections</h2>
+
+            <div class="toggle-card">
+
+                <button class="js-card-toggle">
+                    Show Details
+                </button>
+
+                <div class="card-content is-hidden">
+                    HTML provides the structure of a webpage.
+                </div>
+
+            </div>
+
+            <div class="toggle-card">
+
+                <button class="js-card-toggle">
+                    Show Details
+                </button>
+
+                <div class="card-content is-hidden">
+                    CSS controls appearance and layout.
+                </div>
+
+            </div>
+
+            <div class="toggle-card">
+
+                <button class="js-card-toggle">
+                    Show Details
+                </button>
+
+                <div class="card-content is-hidden">
+                    JavaScript controls behaviour and interaction.
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            DecodeLabs Frontend Development Internship 2026
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
