@@ -41,4 +41,4 @@ Open `index.html` in your browser.
 
 ## Live Demo
 
-Add GitHub Pages link here after deployment.
+https://fazal305.github.io/decodelabs-interactive-web-elements/
